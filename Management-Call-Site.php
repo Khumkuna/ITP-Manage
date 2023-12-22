@@ -229,41 +229,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
        </h4>
         <hr class="w3-clear">
 
-        <?php
-        $sql_Count="Select * from `call-site_tb` where Project_ID = '$Project_IDX'";
-        $query_Count=mysqli_query($conn,$sql_Count);
-        $Count = 0;
-        while ($data_Count=mysqli_fetch_array($query_Count))                       
-        { $Count++;
-            $CS_Name = $data_Count['CS_Name'];
-            $CS_Subdistrict = $data_Count['CS_Subdistrict'];
-            $CS_City = $data_Count['CS_City'];
-            $CS_Province = $data_Count['CS_Province'];
-            $CS_Address = $data_Count['CS_Address'];
-            
-        ?>
-
-        <?php 
-       
-          if($CS_Name == '')
-          {
-          ?>
-                        <button onclick="myFunction('<?php echo $Count ?>')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-plus-square-o fa-fw w3-margin-right"></i> <?php echo $Brand_Name.' '.$Type_Name.'-'.$Dev_Model?><?php echo $Get_Type ?></button>
-                          <div id="<?php echo $Count ?>" class="w3-hide w3-container">
-                              <form action="Management-Add-Serial-Call.php" method="POST">
-                                    <input tyle="text" hidden name="Dev_ID" value="<?php echo $Dev_ID ?>"> 
-                                    <button name="Import" class="w3-button w3-block w3-theme-l2 w3-left-align"><i class="fa fa-file-excel-o fa-fw w3-margin-right"></i>Import File</button>
-                                </form>
-                                <!-- <form action="Management-Add-Serial.php" method="POST">
-                                    <input tyle="text" hidden name="Dev_ID" value="<?php echo $Dev_ID ?>"> 
-                                    <button name="Import" class="w3-button w3-block w3-theme-l2 w3-left-align"><i class="fa fa-plus fa-fw w3-margin-right"></i>เพิ่มทีละ Row</button>
-                                </form> -->
-                          </div>
-                          <?php 
-                      }
-                      else
-                      {
-                        ?>
+                          
 
                               <table width="100%">
                                 <thead>
@@ -306,10 +272,6 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
                                           </table><br>
 
 
-
-                          <?php
-                          } 
-                        }?>
 
 
 

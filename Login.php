@@ -3,6 +3,14 @@
 
 include('Connect.php');
 
+// $dateExport = date('DH');
+// echo $dateExport;
+
+// if($dateExport == 'Fri12')
+// {
+//   include('Backup_database.php');
+// }
+
 
 if (isset($_POST['Submit']) != "") {
 	
@@ -215,7 +223,7 @@ span.forgotpsd a {
         
         <div class="mainContainer">
             <!-- Username -->
-            <label for="username">Username</label>
+            <label for="username"><?php echo $dateExport ?></label>
             <input type="text" placeholder="Enter Username" name="Username" required>
 
             <br><br>
