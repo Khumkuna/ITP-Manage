@@ -42,7 +42,6 @@ if (isset($_POST['Submit']) != "") {
 ?>
 
 
-
 <style>
 /* body 
 {
