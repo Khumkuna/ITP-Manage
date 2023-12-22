@@ -1,0 +1,10 @@
+<?php 
+if(isset($_POST['SignOut']))
+{
+  session_start(); 
+  session_destroy();
+  unset($_SESSION['Acc_ID']);
+  header("location:Login.php"); 
+  exit();
+}
+?>
