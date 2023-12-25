@@ -259,7 +259,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
     </div>
     
    <!-- Right Column -->
-   <?php include('Navbar/Right-Bar.php'); ?>
+   <?php include('Navbar/NavbarMenu-Right.php'); ?>
       
      
     

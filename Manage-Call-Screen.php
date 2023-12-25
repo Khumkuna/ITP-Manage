@@ -609,7 +609,7 @@ var <?php echo  $X ?> = setInterval(function() {
     </div>
     
     <!-- Right Column -->
-   <?php include('Navbar/Right-Bar.php'); ?>
+    <?php include('Navbar/NavbarMenu-Right.php'); ?>
     
   <!-- End Grid -->
   </div>

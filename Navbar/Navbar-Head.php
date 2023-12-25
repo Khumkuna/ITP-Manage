@@ -15,7 +15,7 @@
     <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-desktop"></i> Call-Screen<span class="w3-badge w3-right w3-small w3-green">3</span></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
       <a href="Manage-Call-Screen.php" class="w3-bar-item w3-button"><i class="fa fa-fax"></i> Call-Screen</a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sitemap"></i> Verifly</a>
+      <a href="Manage-Call-Verify.php" class="w3-bar-item w3-button"><i class="fa fa-sitemap"></i> Verifly</a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-paper-plane"></i> Remote-Teams</a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-motorcycle"></i> Onsite-Teams</a>
       <a href="#" class="w3-bar-item w3-button"><i class="fa fa-wifi"></i> ISP-Service</a>
